@@ -16,15 +16,53 @@ function showSlides() {
 }
 
 
-function adjustLayout() {
-    const calendarContainers = document.querySelectorAll('.calender1, .calender2');
-    const calendarWidth = Math.floor(window.innerWidth / 2) - 20; // 20px margin between calendars
-  
-    calendarContainers.forEach(container => {
-      container.style.width = `${calendarWidth}px`;
-    });
+function adjustStyles() {
+  const body = document.body;
+  const html = document.documentElement;
+
+  const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+  let fontSize = 16;
+  if (viewportWidth < 480) {
+    fontSize = 14;
+  } else if (viewportWidth < 768) {
+    fontSize = 16;
+  } else if (viewportWidth < 1024) {
+    fontSize = 18;
+  } else {
+    fontSize = 20;
   }
+
+  body.style.fontSize = `${fontSize}px`;
+  body.style.padding = `${fontSize / 2}px`;
+  body.style.margin = `${fontSize / 2}px`;
+
+  html.style.fontSize = `${fontSize}px`;
+}
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const calender1 = document.getElementByclsss('calender1');
+    const update1 = document.getElementByclass('update1');
   
-  window.addEventListener('resize', adjustLayout);
+    function checkScreenSize() {
+      const viewportWidth = window.innerWidth;
+      const breakpoint = 375; 
   
-  adjustLayout();
+      if (viewportWidth <= breakpoint) {
+        update1.style.order = '1';
+        calender1.style.order = '2';
+      } else {
+        update1.style.order = '2';
+        calender1.style.order = '1';
+      }
+    }
+  
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+  });
+
+
+
+  

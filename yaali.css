@@ -1,443 +1,404 @@
 * {
-   box-sizing: border-box;
-   
-   padding: 0;
+  
+  padding: 0%;
+  margin: 0;
+  
+  
 }
+
+
+.updatetable{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.updatetable th,td {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: center;
+}
+
+.updatetable th {
+  background-color: #ddd;
+}
+
+.updatetable td {
+  height: 30px;
+}
+
+.updatetable td:first-child {
+  background-color: #f5f5f5;
+}
+
+.updatetable td:empty {
+  background-color: #ffebec;
+}
+
 
 body {
-   font-family: Arial, sans-serif;
-   background-color: bisque;
-}
-
-.calendar {
-   width: 50%;
-   height: 300px;
-   margin: 0 auto;
-   background-color:beige;
-   padding: 20px;
-   border-radius: 5px;
-   border: 5px solid black;
-   
-    
-}
-
-header {
-   text-align: center;
-   margin-bottom: 20px;
-}
-
-table {
-   width: 100%;
-   border-collapse: collapse;
-}
-
-th,
-td {
-   border: 1px solid #ddd;
-   padding: 5px;
-   text-align: center;
-}
-
-th {
-   background-color: #ddd;
-}
-
-td {
-   height: 30px;
-}
-
-td:first-child {
-   background-color: #f5f5f5;
-}
-
-td:empty {
-   background-color: #ffebec;
-}
-.calender1{
-   display: flex;
-width: 50%;
-
-padding-left: 10px
-
-
-}
-.calender2{
-   display: flex;
-   width: 50%;
-   padding-left: 10px;
-   
-
-
-}
-@media (max-width: 100px) {
-   th,
-   td {
-     height: 40px;
-     font-size:10px;
-   }
- }
- 
- h1{
-   font-size: 10px;
- }
-
-
- @media (max-width: 768px) {
-   .calendar {
-     width: calc(48% - 10px);
-   }
- 
-   .calendar:nth-child(2n) {
-     margin-right: 0;
-   }
- }
- 
- @media (max-width: 500px) {
-   .calendar {
-     width: 100%;
-     margin-right: 0;
-   }
- }
- 
- .slideshow-container {
-   position: relative;
-   width: 100%;
-   height: 400px;
-   overflow: hidden;
- }
- 
- .mySlides {
-   display: none;
-   width: 100%;
-   height: 400px;
-   position: absolute;
-   object-fit: cover;
-   object-position: center;
-   transition: 0.5s;
- }
- 
- .mySlides:first-child {
-   display: block;
- }
- 
- .fade {
-   animation-name: fade;
-   animation-duration: 1.5s;
- }
- 
- @keyframes fade {
-   from {
-     opacity: 0.4;
-   }
- 
-   to {
-     opacity: 1;
-   }
- }
- 
- 
- nav {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 20px;
-   background-color:green;
-   color: #fff;
-   font-size: 30px;
-   
- }
- 
- .logo {
-   height: 50px;
- }
- 
- ul {
-   list-style: none;
-   margin: 0;
-   padding: 0;
-   display: flex;
-
- }
- 
- li {
-   margin-right: 20px;
-   
- }
- 
- a {
-   color: #fff;
-   text-decoration: none;
-   border: 1px solid black;
-   border-radius: 10%;
-   background-color: beige;
-   color: black;
- }
- 
- @media (max-width: 768px) {
-   nav {
-     flex-direction: column;
-     align-items: center;
-
-   }
- 
-   .logo {
-     margin-bottom: 20px;
-   }
- 
-   ul {
-     margin-top: 20px;
-     width: 100%;
-     flex-direction: row;
-     justify-content: space-around;
-   }
- }
- .logo1{
-   height: 70px;
-   width:200px;
-   border-radius: 50%;
- }
-
-
-
-
- * {
-   box-sizing: border-box;
- }
- 
- body {
-   margin: 0;
-   font-family: Arial, sans-serif;
- }
- 
- .container {
-   max-width: 1200px;
-   margin: 0 auto;
-   padding: 20px;
- }
- 
- .logo {
-   width: 100%;
-   max-width: 200px;
-   margin-bottom: 20px;
- }
- 
- .calendar-container {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
- }
- 
- .calendar {
-   background-color: #f2f2f2;
-   border-radius: 5px;
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-   margin-bottom: 20px;
-   width: calc(31.33% - 10px);
-   margin-right: 10px;
- }
- 
- .calendar:nth-child(3n) {
-   margin-right: 0;
- }
- 
- @media (max-width: 768px) {
-   .calendar {
-     width: calc(48% - 10px);
-   }
- 
-   .calendar:nth-child(2n) {
-     margin-right: 0;
-   }
- }
- 
- @media (max-width: 500px) {
-   .calendar {
-     width: 100%;
-     margin-right: 0;
-   }
- }
- * {
-   box-sizing: border-box;
- }
- 
- body {
-   margin: 0;
-   font-family: Arial, sans-serif;
- }
- 
- .slideshow-container {
-   position: relative;
-   width: 100%;
-   height: 800px;
-   overflow: hidden;
- }
- 
- .mySlides {
-   display: none;
-   width: 100%;
-   height: 800px;
-   position: absolute;
-   object-fit: cover;
-   object-position: center;
-   transition: 0.5s;
- }
- 
- .mySlides:first-child {
-   display: block;
- }
- 
- .fade {
-   animation-name: fade;
-   animation-duration: 1.5s;
- }
- 
- @keyframes fade {
-   from {
-     opacity: 0.4;
-   }
- 
-   to {
-     opacity: 1;
-   }
- }
- img{
-   width: 100%;
-   height: 900px;
- }
- .events{
-height:30px;
-
-color:black;
- font-size: 20PX;
-
-margin-top: 50PX;
-
-width: 40%;}
-.bring{
-   height: 100px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+background-color: bisque;
 }
 .notice-board {
-   background-color: #f2f2f2;
-   padding: 20px;
-   border: 1px solid #ccc;
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-   position: relative;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   text-align: center;
- }
- 
- .notice-board h2 {
-   
-   height: 50PX;
-   padding-top: 15PX;
- }
- 
- .notice-board p {
-   margin-bottom: 20px;
-   height: 50PX;
-   padding-top: 15PX;
- }
- .update1{
-   font-size: 20px;
-   float: right;
-   width: 40%;
- }
-
-
-
-
-
-
-
- table {
-   float: right;
-   margin-left: 20px;
+  background-color: green;
+  padding: 10px;
+  color: white;
 }
 
+
+
+
+.hyfl{
+  display: flex;
+  gap: 50px;
+  background-color: #BBD0EC;
+  
+}
+
+.media{
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr  0.1fr 0.1fr;
+  gap: 10px;
+  
+  }
+  
+  .calendar th,td{
+    font-size: 15px;
+  }
+.calendar h1{
+  font-size: 15px;
+  text-align: center;
+}
+.calendar {
+  border: 5px solid black;
+  
+}
+ .calendar td:empty{
+  background-color: #FAE7F3;
+ }
+
+
+
+
+.update1{
+  
+  width: 500px;
+
+  
+}
+.updatetable{
+  width: 500px;
+  height: 50px;
+  margin-top: 10px;
+}
 tr:hover td.viladat {
-   background-color: green;
-   color: white;
+  background-color: green;
+  color: white;
 }
-
-
-
 tr:hover td.shahadat {background-color: red;
-   color: white;
+  color: white;
+}
+
+
+.logo{
+  background-color:black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+
+
+}
+.logo img{
+  height: 60px;
+  float: left;
+width: 100px;
+border-radius: 50%;
+padding-top: 5px;
+padding-left: 5px
+}
+.logo ul{
+  display: flex;
+  gap: 70px;
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+ padding: 20px;
+ padding-top: 30px;
+}
+.logo ul li a{
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #3c4043;
+  border-radius: 20px;
+  padding: 10px;
+}
+ nav ul li a:hover   {
+  background-color: yellow;
+  color: black;
+  transition: color 0.3s ease;
+}  
+
+
+
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.mySlides{
+  display: none;
+}
+
+.mySlides:first-child {
+  display: block;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.mySlides{
+  height:auto;
+  width: 100%;
+}
+.mySlides img{
+width: 100%;
+height: 1000px;
+
+}
+.container12 {
+  width: 100%;
+  overflow: hidden;
+  padding-left: 10px;
+  background-color:wheat;
+  margin-top: 10px;
+  border: 5px solid black;
+  border-radius: 30px;
+  
+}
+
+.container12 img {
+  float: left;
+  width: 300px;
+  margin-right: 2rem;
+  height: 300px;
+ border: 2px solid black;
+  border-radius: 20%;
+  margin-top: 30px;
+
+}
+
+.container12 p {
+  width: 50%;
+  float: left;
+  margin-left: 200PX;
+  font-size: 20PX;
+  font-family: brush script MT , cursive;
+  background-color: white;
+  padding: 10px;
+  
+}
+.about{
+  width: 100%;
+ font-size: large;
+  height: 100PX;
+  background-color: #FFE7E7;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 50px;
+}
+
+@media (min-width:319px) and (max-width:600px) 
+  {
+    *{
+      padding: 0px;
+      margin: 0px;
+    }
+
+
+
+    .logo{
+  background-color: black;
+    width: 20px;
+  }
+  .logo img{
+    height: 39px;
+    width: 39px;
+    margin-top: 19px;
+    margin-left: 10px;
+  }
+  .navbar{
+    background-color: black;
+  }
+  
+  .logo ul li a{
+    background-color: black;
+    height: 10px;
+    width: px;
+    color: white;
+    border:2px solid #3c4043 ;
+  gap: 10px;
+    display: flex;
+    margin-left: 20px;
+    
+    font-size: 7px;
+    
+    
+   
+   }
+   .logo ul{
+    gap: 10px;
+    text-align: center;
+
+   }
+   
+
+
+
+   .hyfl{
+    display: block;
+    gap: 50px;
+    background-color: #BBD0EC;
+    
+  }
+  
+  .media{
+    
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr  0.1fr 0.1fr;
+    gap: 10px;
+    
+    }
+    
+    .calendar th,td{
+      font-size: 33px;
+          }
+  .calendar h1{
+    font-size: 15px;
+    text-align: center;
+  }
+  .calendar {
+    border: 5px solid black;
+    margin-left: 10px;
+    
+  }
+   .calendar td:empty{
+    background-color: #FAE7F3;
+   }
+  
+  
+  
+  
+  .update1{
+    
+    width: 400px;
+  
+    
+  }
+  .updatetable {
+    width: 400px;
+    height: 50px;
+    margin-top: 10px;
+  }
+  .update1 th{
+    font-size: 13px;
+  }
+  .update1 td{
+    font-size: 13px;
+  }
+
+
+
+
+
+  tr:hover td.viladat {
+    background-color: green;
+    color: white;
+  }
+  tr:hover td.shahadat {background-color: red;
+    color: white;
+  }
+  
+    
+   
+  }
+  aside h1{
+    height: 50px;
+   text-align: center;
+  padding-top: 20px;
+background-color: white;}
+
+
+.direction img {
+  height: 50px;
+  width: 50px;
+
+}
+.shop{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ 
+}
+
+.direction,a,h3{
+  padding-left: 40px;
+  font-size: 20px;
+}
+.PHONE img{
+  padding-top: 50px;
+}
+.sara{
+  font-size: 20px;
+  font-style: italic;
+}
+.sara h2{
+  font-size: 20px;
+  font-style: italic;
+  font-family:  brush script MT , cursive;
+  padding-left: 200px;
+  color: white;
+  background-color: BLACK;
+  font-weight: 50PX;
+}
+.social img{
+height: 50px;
+width: 50px;
+border: 1px solid brown;
+border-radius: 50%;
+margin-top: 30px;
+}
+.social{
+  display: flex;
+  justify-content: space-evenly;
+  height: 100px;
+  background-color: black;
+}
+.social>h4{
+  color: white;
+  margin-top: 50px;
+}
+.ads{
+  background-image: url(image/shop2.jpg);
 }
 
 
 
-
-
-.container12 {
-   width: 100%;
-   overflow: hidden;
-   padding-left: 10px;
-   background-color:wheat;
-   margin-top: 10px;
-   border: 5px solid black;
-   
- }
- 
- .container12 img {
-   float: left;
-   width: 400PX;
-   margin-right: 2rem;
-   height: 300PX;
-   border: 5PX SOLID black;
-   border-radius: 30%;
-   margin-top: 10px;
-
- }
- 
- .container12 p {
-   width: 50%;
-   float: left;
-   margin-left: 200PX;
-   font-size: 20PX;
-   
- }
- .container12 h1 {
-   width: 50%;
-   float: left;
-   margin-left: 200PX;
-   font-size: large;
- }
- 
-
-
- 
- /* Style for screens larger than 960px */
-@media (min-width: 960px) {
-   .container {
-     width: 960px;
-   }
- }
- 
- /* Style for screens between 768px and 959px */
- @media (min-width: 768px) and (max-width: 959px) {
-   .container {
-     width: 750px;
-   }
- }
- 
- /* Style for screens smaller than 768px */
- @media (max-width: 767px) {
-   .container {
-     width: 100%;
-   }
-   .header,
-   .footer {
-     text-align: center;
-   }
-   .nav {
-     display: none;
-   }
- }
-
-
- 
- 
- 
